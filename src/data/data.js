@@ -1,0 +1,71 @@
+
+
+const posts=[
+    {
+        id:1,
+        url:"https://imgs.search.brave.com/pg5nXxULxa0ub8PCG0P1DzTjUdYfvXYD2Oz4vwywmIQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZnJlZWltYWdl/cy5jb20vaW1hZ2Vz/L2hvbWUvZmlsZXR5/cGVzL3Bob3RvLndl/YnA",
+        likes:252,
+        comments:25,
+        status:false,
+        name:"Samuel"
+    },
+    {
+        id:2,
+        url:"https://imgs.search.brave.com/mknk5rS-33CMA4RNtSfDKAy4Xua-VBK29SUJZuV0N9o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/NTI4MzgyNjk0NDMt/Yzg2ZTZhMzEzNGY5/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRC/OGZHMWxlR2xqYnlV/eU1HTnBkSGw4Wlc1/OE1IeDhNSHg4ZkRB/PSZ3PTEwMDAmcT04/MA",
+        likes:123,
+        comments:12,
+        status:false,
+        name:"Jhon"
+    },
+    {
+        id:3,
+        url:"https://imgs.search.brave.com/JK49UGALafROXK5ReV8VvkDAum4xWURkW9ntAquKNcY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MDY3NDg2ODYyMTQt/ZTlkZjE0ZDRkOWQw/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4T1h4/OGNHVnljMjl1ZkdW/dWZEQjhmREI4Zkh3/dyZ3PTEwMDAmcT04/MA.jpeg",
+        likes:123,
+        comments:31,
+        status:false,
+        name:"Kiran"
+    },
+    {
+        id:4,
+        url:"https://imgs.search.brave.com/BqLgn_vCJb5ECocKg93CIJt1XDiZRccXr_st13U6ln0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi82OTI2OS82MDB4/NjAwLzFmZGU4ODk1/YTYvYm9sbGVuMTc1/Ny5qcGc",
+        likes:123,
+        comments:18,
+        status:false,
+        name:"Amar"
+    },
+    {
+        id:5,
+        url:"https://imgs.search.brave.com/HnqkZXHGQg7n2O5ZyYbX7eI7Vvg1VtgfEM8q3hrTe2E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/OTQyMzY0NzI4MTgt/ZDM1ZTUwZTYwNGNm/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRK/OGZHMWxiR0p2ZFhK/dVpYeGxibnd3Zkh3/d2ZIeDhNQT09Jnc9/MTAwMCZxPTgw",
+        likes:123,
+        status:false,
+        comments:9,
+        name:"Ashiq"
+    },
+    {
+        id:6,
+        url:"https://imgs.search.brave.com/JmfKrk59s8KMUPG62cTqo__qKXwtVsupSIarPoxG1_M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NzY1MDkxNDczNTkt/NDFlN2NlZjQ1OWI5/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRs/OGZHSnlhWE5pWVc1/bGZHVnVmREI4ZkRC/OGZId3cmdz0xMDAw/JnE9ODA.jpeg",
+        likes:123,
+        status:false,
+        comments:5,
+        name:"Sanju"
+    },
+    {
+        id:7,
+        url:"https://imgs.search.brave.com/dnnIm7lB_BYYEBO5xdrI8UuugNdvko0IxeYPBGRpUc0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/NzczNDY0MzM1MjEt/OTEyODU4ZmZkNDk4/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/d2FHOTBieTF2Wmkx/MGFHVXRaR0Y1Zkh4/OGZHVnVmREI4Zkh4/OGZBPT0mYXV0bz1m/b3JtYXQsY29tcHJl/c3MmZml0PWNyb3Am/dz0xMDAwJmg9MTAw/MA.jpeg",
+        likes:123,
+        status:false,
+        comments:25,
+        name:"Bijoy"
+    },
+    {
+        id:8,
+        url:"https://imgs.search.brave.com/4uWoBwhe61VEl39Rs5JLt9faoGjjlcZAR_QFYpw4YEU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMy8w/Ny8yMi8xMC81MC9z/aGlwLTgxNDMxNjlf/NjQwLmpwZw",
+        likes:123,
+        comments:25,
+        status:false,
+        name:"Ajay"
+    }
+
+]
+
+export default posts
